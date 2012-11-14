@@ -1,0 +1,5 @@
+CSE120, F2012 - Goryll
+FAS332, F2012 - Brougham
+IEE380, F2012 - Chattin
+MAT343, F2012 - Welfert
+PHY121, F2012 - Drucker

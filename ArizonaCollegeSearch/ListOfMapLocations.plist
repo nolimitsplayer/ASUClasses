@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SRC</key>
+	<dict>
+		<key>Latitude</key>
+		<real>33.415869</real>
+		<key>Longitude</key>
+		<real>-111.932702</real>
+	</dict>
+</dict>
+</plist>
