@@ -77,12 +77,12 @@
 	}
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+/*- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"UniversityofArizona"]) {
         UofAViewController *uoavc = (UofAViewController *)[segue destinationViewController];
 	} else if ([[segue identifier] isEqualToString:@"ArizonaStateUniversity"]) {
 		ASUViewController *avc = (ASUViewController *)[segue destinationViewController];
 	}
-}
+}*/
 
 @end
