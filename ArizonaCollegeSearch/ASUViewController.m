@@ -109,12 +109,14 @@
 	if (month > 10 || month < 3) {
 		yearFinal = [NSMutableString stringWithFormat:@"%d", [yearFinal intValue] + 1];
 		[yearFinal appendString:@"1"];
+		return yearFinal;
 	} else if (month > 3 && month < 7) {
 		[yearFinal appendString:@"4"];
+		return yearFinal;
 	} else {
 		[yearFinal appendString:@"7"];
+		return yearFinal;
 	}
-	return yearFinal;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
