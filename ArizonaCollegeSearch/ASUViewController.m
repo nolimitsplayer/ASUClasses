@@ -100,20 +100,21 @@
 }
 
 - (NSString *)classYear {
-	/*NSDate *date = [NSDate date];
-	NSCalendar *calendar = [NSCalendar currentCalendar];
-	NSUInteger unitFlags = NSYearCalendarUnit|NSMonthCalendarUnit;
-	NSDateComponents *components = [calendar components:unitFlags fromDate:date];
+	NSDateComponents *components = [[NSCalendar currentCalendar] components: NSMonthCalendarUnit | NSYearCalendarUnit fromDate:[NSDate date]];
 	NSInteger month = components.month;
 	NSInteger year = components.year;
-	NSString *monthString = [NSString stringWithFormat:@"%d", month];
 	NSString *yearString = [NSString stringWithFormat:@"%d", year];
-	[yearString stringByReplacingOccurrencesOfString:@"0"
-										   withString:@""
-											  options:NULL
-												range:NSMakeRange(0, 2)];
-	
-	*/return @"2131";
+	yearString = [yearString stringByReplacingOccurrencesOfString:@"0" withString:@""];
+	NSMutableString *yearFinal = [yearString mutableCopy];
+	if (month > 10 || month < 3) {
+		yearFinal = [NSMutableString stringWithFormat:@"%d", [yearFinal intValue] + 1];
+		[yearFinal appendString:@"1"];
+	} else if (month > 3 && month < 7) {
+		[yearFinal appendString:@"4"];
+	} else {
+		[yearFinal appendString:@"7"];
+	}
+	return yearFinal;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
