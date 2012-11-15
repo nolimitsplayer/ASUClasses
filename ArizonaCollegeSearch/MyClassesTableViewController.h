@@ -10,12 +10,11 @@
 #import "XMLClass.h"
 #import "XMLParser.h"
 
-@interface MyClassesTableViewController : UITableViewController {
+@interface MyClassesTableViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate> {
 	XMLParser *parser;
-	NSArray *myClasses;
+	NSMutableArray *myClasses;
 }
 
-@property (nonatomic, retain) NSArray *myClasses;
-@property (nonatomic, retain) XMLParser *parser;
+@property (nonatomic, retain) NSMutableArray *myClasses;
 
 @end

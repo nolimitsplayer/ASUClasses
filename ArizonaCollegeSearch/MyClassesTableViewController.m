@@ -11,16 +11,28 @@
 @implementation MyClassesTableViewController
 
 @synthesize myClasses = _myClasses;
-@synthesize parser = _parser;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     if (self.myClasses == nil) {
         self.myClasses = [[NSMutableArray alloc]init];
     }
-	NSString *xmlFile = [[NSBundle mainBundle] pathForResource:@"MyClasses" ofType:@"xml"];
-	self.parser = [[XMLParser alloc] loadXMLByURL:@"http://api.twitter.com/1/statuses/user_timeline/KentFranks.xml"];
-	self.title = @"Classes";
+	
+	self.tableView.delegate = self;
+	self.tableView.dataSource = self;
+	NSString *xmlPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"MyClasses.xml"];
+	NSURL *xmlURL = [NSURL fileURLWithPath:xmlPath];
+	NSXMLParser *parser1 = [[NSXMLParser alloc] initWithContentsOfURL:xmlURL];
+	XMLParser *xmlParser = [[XMLParser alloc] initXMLParser];
+	[parser1 setDelegate:xmlParser];
+	BOOL success = [parser1 parse];
+	if (!success) {
+		NSLog(@"Error");
+		return;
+	}
+	self.myClasses = [xmlParser getClassList];
+	
+	
 	//NSString *content = [NSString stringWithContentsOfFile:xmlFile encoding:NSASCIIStringEncoding error:nil];
    // NSString *file1 = [[NSBundle mainBundle] pathForResource:@"MyClasses" ofType:@"txt"];
     //NSString *content1 = [NSString stringWithContentsOfFile:file1 encoding:NSASCIIStringEncoding error:nil];
@@ -35,7 +47,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [[self.parser classes] count];
+    return [self.myClasses count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -45,8 +57,9 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
 	
-	XMLClass *currentClass = [[parser classes] objectAtIndex:indexPath.row];
+	XMLClass *currentClass = [self.myClasses objectAtIndex:indexPath.row];
     cell.textLabel.text = [currentClass title];
+	NSLog(@"%@", [currentClass title]);
     return cell;
 }
 

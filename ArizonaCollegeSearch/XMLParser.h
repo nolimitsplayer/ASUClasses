@@ -9,17 +9,16 @@
 #import <Foundation/Foundation.h>
 #import "XMLClass.h"
 
+@class XMLClass;
 @interface XMLParser : NSObject <NSXMLParserDelegate> {
 	NSMutableString *currentElement;
-	NSMutableArray *classes;
-	NSXMLParser *parser;
+	NSMutableArray *classesList;
 	XMLClass *currentClass;
 }
 
-@property (nonatomic, retain) NSMutableArray *classes;
-@property (nonatomic, retain) NSMutableString *currentElement;
-@property (nonatomic, retain) NSXMLParser *parser;
-@property (nonatomic, retain) XMLClass *currentClass;
-- (id)loadXMLByURL:(NSString *)urlString;
+@property (nonatomic, retain) NSMutableArray *classesList;
+
+- (XMLParser *)initXMLParser;
+- (NSMutableArray *)getClassList;
 
 @end
