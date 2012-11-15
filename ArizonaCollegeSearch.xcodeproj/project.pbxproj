@@ -28,6 +28,10 @@
 		947285F6164F05D400525A5F /* Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 947285F5164F05D400525A5F /* Button.m */; };
 		949572291640D62200778400 /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 949572281640D62200778400 /* iPadStoryboard.storyboard */; };
 		94C4BD3116444B2300BCE901 /* iPhoneCampusSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C4BD3016444B2300BCE901 /* iPhoneCampusSelectViewController.m */; };
+		94D2D21216545BFA009FB2C0 /* DetailClassTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D2D21116545BFA009FB2C0 /* DetailClassTableViewController.m */; };
+		94D2D21516545D9C009FB2C0 /* XMLClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D2D21416545D9C009FB2C0 /* XMLClass.m */; };
+		94D2D21816545EA2009FB2C0 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D2D21716545EA2009FB2C0 /* XMLParser.m */; };
+		94D2D21A1654606A009FB2C0 /* MyClasses.xml in Resources */ = {isa = PBXBuildFile; fileRef = 94D2D2191654606A009FB2C0 /* MyClasses.xml */; };
 		94D72CBD163F7ED7001C8DB0 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D72CBC163F7ED7001C8DB0 /* InitialViewController.m */; };
 		94D72CC1163F8097001C8DB0 /* MyClassesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D72CC0163F8097001C8DB0 /* MyClassesTableViewController.m */; };
 		94D72CC316404A5E001C8DB0 /* MyClasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = 94D72CC216404A5E001C8DB0 /* MyClasses.txt */; };
@@ -68,6 +72,13 @@
 		949572281640D62200778400 /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
 		94C4BD2F16444B2300BCE901 /* iPhoneCampusSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneCampusSelectViewController.h; sourceTree = "<group>"; };
 		94C4BD3016444B2300BCE901 /* iPhoneCampusSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneCampusSelectViewController.m; sourceTree = "<group>"; };
+		94D2D21016545BFA009FB2C0 /* DetailClassTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailClassTableViewController.h; sourceTree = "<group>"; };
+		94D2D21116545BFA009FB2C0 /* DetailClassTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailClassTableViewController.m; sourceTree = "<group>"; };
+		94D2D21316545D9C009FB2C0 /* XMLClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLClass.h; sourceTree = "<group>"; };
+		94D2D21416545D9C009FB2C0 /* XMLClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLClass.m; sourceTree = "<group>"; };
+		94D2D21616545EA2009FB2C0 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		94D2D21716545EA2009FB2C0 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
+		94D2D2191654606A009FB2C0 /* MyClasses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = MyClasses.xml; path = ../MyClasses.xml; sourceTree = "<group>"; };
 		94D72CBB163F7ED7001C8DB0 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
 		94D72CBC163F7ED7001C8DB0 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
 		94D72CBF163F8097001C8DB0 /* MyClassesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClassesTableViewController.h; sourceTree = "<group>"; };
@@ -126,6 +137,10 @@
 		36F1585C163E42370093F89A /* ArizonaCollegeSearch */ = {
 			isa = PBXGroup;
 			children = (
+				94D2D21616545EA2009FB2C0 /* XMLParser.h */,
+				94D2D21716545EA2009FB2C0 /* XMLParser.m */,
+				94D2D21316545D9C009FB2C0 /* XMLClass.h */,
+				94D2D21416545D9C009FB2C0 /* XMLClass.m */,
 				947285F7164F066A00525A5F /* Button */,
 				9495722E1640EC1500778400 /* College VCs */,
 				949572301640EC3B00778400 /* Table VCs */,
@@ -145,6 +160,7 @@
 		36F1585D163E42370093F89A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				94D2D2191654606A009FB2C0 /* MyClasses.xml */,
 				9434EEB3163EFFD10001D0E6 /* ListOfAZColleges.txt */,
 				94D72CC216404A5E001C8DB0 /* MyClasses.txt */,
 				36F1585E163E42370093F89A /* ArizonaCollegeSearch-Info.plist */,
@@ -200,6 +216,8 @@
 		949572301640EC3B00778400 /* Table VCs */ = {
 			isa = PBXGroup;
 			children = (
+				94D2D21016545BFA009FB2C0 /* DetailClassTableViewController.h */,
+				94D2D21116545BFA009FB2C0 /* DetailClassTableViewController.m */,
 				947285BE164C956900525A5F /* MyClassesDetailTableViewController.h */,
 				947285BF164C956900525A5F /* MyClassesDetailTableViewController.m */,
 				94C4BD2F16444B2300BCE901 /* iPhoneCampusSelectViewController.h */,
@@ -289,6 +307,7 @@
 				362ADA4A164068EA00FE8463 /* ListOfMapLocations.plist in Resources */,
 				949572291640D62200778400 /* iPadStoryboard.storyboard in Resources */,
 				36D11E001652D6C200794B75 /* iPhoneStoryboard.storyboard in Resources */,
+				94D2D21A1654606A009FB2C0 /* MyClasses.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +330,9 @@
 				94C4BD3116444B2300BCE901 /* iPhoneCampusSelectViewController.m in Sources */,
 				947285C0164C956900525A5F /* MyClassesDetailTableViewController.m in Sources */,
 				947285F6164F05D400525A5F /* Button.m in Sources */,
+				94D2D21216545BFA009FB2C0 /* DetailClassTableViewController.m in Sources */,
+				94D2D21516545D9C009FB2C0 /* XMLClass.m in Sources */,
+				94D2D21816545EA2009FB2C0 /* XMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

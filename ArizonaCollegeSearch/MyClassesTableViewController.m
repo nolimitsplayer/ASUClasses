@@ -11,17 +11,23 @@
 @implementation MyClassesTableViewController
 
 @synthesize myClasses = _myClasses;
+@synthesize parser = _parser;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     if (self.myClasses == nil) {
         self.myClasses = [[NSMutableArray alloc]init];
     }
-    NSString *file = [[NSBundle mainBundle] pathForResource:@"MyClasses" ofType:@"txt"];
-    NSString *content = [NSString stringWithContentsOfFile:file encoding:NSASCIIStringEncoding error:nil];
-    NSArray *myClassesArray = [content componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
-    myClassesArray = [myClassesArray sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
-    self.myClasses = myClassesArray;
+	NSString *xmlFile = [[NSBundle mainBundle] pathForResource:@"MyClasses" ofType:@"xml"];
+	self.parser = [[XMLParser alloc] loadXMLByURL:@"http://api.twitter.com/1/statuses/user_timeline/KentFranks.xml"];
+	self.title = @"Classes";
+	//NSString *content = [NSString stringWithContentsOfFile:xmlFile encoding:NSASCIIStringEncoding error:nil];
+   // NSString *file1 = [[NSBundle mainBundle] pathForResource:@"MyClasses" ofType:@"txt"];
+    //NSString *content1 = [NSString stringWithContentsOfFile:file1 encoding:NSASCIIStringEncoding error:nil];
+	//NSLog(@"%@", file1);
+    //NSArray *myClassesArray = [content1 componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
+    //myClassesArray = [myClassesArray sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    //self.myClasses = myClassesArray;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -29,7 +35,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.myClasses count];
+    return [[self.parser classes] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -38,14 +44,11 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    cell.textLabel.text = [self.myClasses objectAtIndex:indexPath.row];
+	
+	XMLClass *currentClass = [[parser classes] objectAtIndex:indexPath.row];
+    cell.textLabel.text = [currentClass title];
     return cell;
 }
-
-/*- (void)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-	[tableView setEditing:YES];
-}*/
-
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	static NSString *CellIdentifier = @"MyClassesCell";

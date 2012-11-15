@@ -1,0 +1,12 @@
+<classlist type="array">
+	<class>
+		<title>CSE</title>
+		<number>120</number>
+		<semester>Fall</semester>
+		<year>2012</year>
+		<professor>Goryll</professor>
+		<startTime>730 AM</startTime>
+		<endTime>845 AM</endTime>
+		<id>12345</id>
+	</class>
+</classlist>

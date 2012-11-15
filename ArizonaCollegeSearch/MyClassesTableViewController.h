@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XMLClass.h"
+#import "XMLParser.h"
 
-@interface MyClassesTableViewController : UITableViewController
+@interface MyClassesTableViewController : UITableViewController {
+	XMLParser *parser;
+	NSArray *myClasses;
+}
 
 @property (nonatomic, retain) NSArray *myClasses;
+@property (nonatomic, retain) XMLParser *parser;
 
 @end
