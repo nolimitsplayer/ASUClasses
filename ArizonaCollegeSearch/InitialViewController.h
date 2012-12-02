@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Button.h"
 
 @interface InitialViewController : UIViewController
 - (IBAction)classSearchButtonClicked:(id)sender;
 - (IBAction)myClassesButtonClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *classSearchButton;
 
 @end

@@ -11,7 +11,6 @@
 		366975F2163F133E008368DB /* ListOfCollegesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434EEAE163EFF860001D0E6 /* ListOfCollegesTableViewController.m */; };
 		366975F4163F1351008368DB /* ASUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434EEAC163EFF860001D0E6 /* ASUViewController.m */; };
 		366975F5163F1355008368DB /* UofAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434EEB0163EFF860001D0E6 /* UofAViewController.m */; };
-		366975F6163F135A008368DB /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434EEB2163EFF860001D0E6 /* WebViewController.m */; };
 		36A6F90C16408A6F0047E2C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A6F90B16408A6F0047E2C9 /* CoreLocation.framework */; };
 		36D11E001652D6C200794B75 /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36D11DFE1652D6C200794B75 /* iPhoneStoryboard.storyboard */; };
 		36F15857163E42370093F89A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F15856163E42370093F89A /* UIKit.framework */; };
@@ -24,10 +23,16 @@
 		36F1586B163E42380093F89A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36F1586A163E42380093F89A /* Default@2x.png */; };
 		36F1586D163E42380093F89A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36F1586C163E42380093F89A /* Default-568h@2x.png */; };
 		9434EEB4163EFFD10001D0E6 /* ListOfAZColleges.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9434EEB3163EFFD10001D0E6 /* ListOfAZColleges.txt */; };
+		9452DDE41661D07000AA8845 /* HTMLClassesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9452DDE31661D07000AA8845 /* HTMLClassesViewController.m */; };
 		947285C0164C956900525A5F /* MyClassesDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 947285BF164C956900525A5F /* MyClassesDetailTableViewController.m */; };
 		947285F6164F05D400525A5F /* Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 947285F5164F05D400525A5F /* Button.m */; };
-		949572291640D62200778400 /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 949572281640D62200778400 /* iPadStoryboard.storyboard */; };
+		9479F95716628F5500778823 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 9479F95216628F5500778823 /* TFHpple.m */; };
+		9479F95816628F5500778823 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 9479F95416628F5500778823 /* TFHppleElement.m */; };
+		9479F95916628F5500778823 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 9479F95616628F5500778823 /* XPathQuery.m */; };
+		9479F95B1662B02700778823 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9479F95A1662B02700778823 /* libxml2.2.dylib */; };
+		9479F95C1662B06F00778823 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9452DDE51661D36200AA8845 /* libxml2.dylib */; };
 		94C4BD3116444B2300BCE901 /* iPhoneCampusSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C4BD3016444B2300BCE901 /* iPhoneCampusSelectViewController.m */; };
+		94CE79B3165B323800C21E74 /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CE79B1165B323800C21E74 /* iPadStoryboard.storyboard */; };
 		94D2D21216545BFA009FB2C0 /* DetailClassTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D2D21116545BFA009FB2C0 /* DetailClassTableViewController.m */; };
 		94D2D21516545D9C009FB2C0 /* XMLClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D2D21416545D9C009FB2C0 /* XMLClass.m */; };
 		94D2D21816545EA2009FB2C0 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D2D21716545EA2009FB2C0 /* XMLParser.m */; };
@@ -62,16 +67,24 @@
 		9434EEAE163EFF860001D0E6 /* ListOfCollegesTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListOfCollegesTableViewController.m; sourceTree = "<group>"; };
 		9434EEAF163EFF860001D0E6 /* UofAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UofAViewController.h; sourceTree = "<group>"; };
 		9434EEB0163EFF860001D0E6 /* UofAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UofAViewController.m; sourceTree = "<group>"; };
-		9434EEB1163EFF860001D0E6 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
-		9434EEB2163EFF860001D0E6 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		9434EEB3163EFFD10001D0E6 /* ListOfAZColleges.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ListOfAZColleges.txt; sourceTree = "<group>"; };
+		9452DDE21661D07000AA8845 /* HTMLClassesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLClassesViewController.h; sourceTree = "<group>"; };
+		9452DDE31661D07000AA8845 /* HTMLClassesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLClassesViewController.m; sourceTree = "<group>"; };
+		9452DDE51661D36200AA8845 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		947285BE164C956900525A5F /* MyClassesDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClassesDetailTableViewController.h; sourceTree = "<group>"; };
 		947285BF164C956900525A5F /* MyClassesDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClassesDetailTableViewController.m; sourceTree = "<group>"; };
 		947285F4164F05D400525A5F /* Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Button.h; sourceTree = "<group>"; };
 		947285F5164F05D400525A5F /* Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Button.m; sourceTree = "<group>"; };
-		949572281640D62200778400 /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
+		9479F95116628F5500778823 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		9479F95216628F5500778823 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		9479F95316628F5500778823 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		9479F95416628F5500778823 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		9479F95516628F5500778823 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		9479F95616628F5500778823 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		9479F95A1662B02700778823 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		94C4BD2F16444B2300BCE901 /* iPhoneCampusSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneCampusSelectViewController.h; sourceTree = "<group>"; };
 		94C4BD3016444B2300BCE901 /* iPhoneCampusSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneCampusSelectViewController.m; sourceTree = "<group>"; };
+		94CE79B2165B323800C21E74 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = ArizonaCollegeSearch/en.lproj/iPadStoryboard.storyboard; sourceTree = "<group>"; };
 		94D2D21016545BFA009FB2C0 /* DetailClassTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailClassTableViewController.h; sourceTree = "<group>"; };
 		94D2D21116545BFA009FB2C0 /* DetailClassTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailClassTableViewController.m; sourceTree = "<group>"; };
 		94D2D21316545D9C009FB2C0 /* XMLClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLClass.h; sourceTree = "<group>"; };
@@ -94,6 +107,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9479F95C1662B06F00778823 /* libxml2.dylib in Frameworks */,
+				9479F95B1662B02700778823 /* libxml2.2.dylib in Frameworks */,
 				36F1585B163E42370093F89A /* CoreGraphics.framework in Frameworks */,
 				36A6F90C16408A6F0047E2C9 /* CoreLocation.framework in Frameworks */,
 				36F15859163E42370093F89A /* Foundation.framework in Frameworks */,
@@ -125,6 +140,8 @@
 		36F15855163E42370093F89A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9479F95A1662B02700778823 /* libxml2.2.dylib */,
+				9452DDE51661D36200AA8845 /* libxml2.dylib */,
 				36A6F90B16408A6F0047E2C9 /* CoreLocation.framework */,
 				94D72CC716405BB8001C8DB0 /* MapKit.framework */,
 				36F15856163E42370093F89A /* UIKit.framework */,
@@ -137,14 +154,11 @@
 		36F1585C163E42370093F89A /* ArizonaCollegeSearch */ = {
 			isa = PBXGroup;
 			children = (
-				94D2D21616545EA2009FB2C0 /* XMLParser.h */,
-				94D2D21716545EA2009FB2C0 /* XMLParser.m */,
-				94D2D21316545D9C009FB2C0 /* XMLClass.h */,
-				94D2D21416545D9C009FB2C0 /* XMLClass.m */,
+				9452DDE11661CFBF00AA8845 /* HTML Table */,
+				9452DD5D165D54C700AA8845 /* XML */,
 				947285F7164F066A00525A5F /* Button */,
 				9495722E1640EC1500778400 /* College VCs */,
 				949572301640EC3B00778400 /* Table VCs */,
-				949572311640ED1F00778400 /* Web VCs */,
 				9495722F1640EC2600778400 /* Storyboards */,
 				9495722D1640EC0600778400 /* Maps */,
 				94D72CBB163F7ED7001C8DB0 /* InitialViewController.h */,
@@ -173,6 +187,30 @@
 				36F1586C163E42380093F89A /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9452DD5D165D54C700AA8845 /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				94D2D21616545EA2009FB2C0 /* XMLParser.h */,
+				94D2D21716545EA2009FB2C0 /* XMLParser.m */,
+				94D2D21316545D9C009FB2C0 /* XMLClass.h */,
+				94D2D21416545D9C009FB2C0 /* XMLClass.m */,
+			);
+			name = XML;
+			sourceTree = "<group>";
+		};
+		9452DDE11661CFBF00AA8845 /* HTML Table */ = {
+			isa = PBXGroup;
+			children = (
+				9479F95116628F5500778823 /* TFHpple.h */,
+				9479F95216628F5500778823 /* TFHpple.m */,
+				9479F95316628F5500778823 /* TFHppleElement.h */,
+				9479F95416628F5500778823 /* TFHppleElement.m */,
+				9479F95516628F5500778823 /* XPathQuery.h */,
+				9479F95616628F5500778823 /* XPathQuery.m */,
+			);
+			name = "HTML Table";
 			sourceTree = "<group>";
 		};
 		947285F7164F066A00525A5F /* Button */ = {
@@ -207,8 +245,8 @@
 		9495722F1640EC2600778400 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				94CE79B1165B323800C21E74 /* iPadStoryboard.storyboard */,
 				36D11DFE1652D6C200794B75 /* iPhoneStoryboard.storyboard */,
-				949572281640D62200778400 /* iPadStoryboard.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -216,6 +254,8 @@
 		949572301640EC3B00778400 /* Table VCs */ = {
 			isa = PBXGroup;
 			children = (
+				9452DDE21661D07000AA8845 /* HTMLClassesViewController.h */,
+				9452DDE31661D07000AA8845 /* HTMLClassesViewController.m */,
 				94D2D21016545BFA009FB2C0 /* DetailClassTableViewController.h */,
 				94D2D21116545BFA009FB2C0 /* DetailClassTableViewController.m */,
 				947285BE164C956900525A5F /* MyClassesDetailTableViewController.h */,
@@ -228,15 +268,6 @@
 				94D72CC0163F8097001C8DB0 /* MyClassesTableViewController.m */,
 			);
 			name = "Table VCs";
-			sourceTree = "<group>";
-		};
-		949572311640ED1F00778400 /* Web VCs */ = {
-			isa = PBXGroup;
-			children = (
-				9434EEB1163EFF860001D0E6 /* WebViewController.h */,
-				9434EEB2163EFF860001D0E6 /* WebViewController.m */,
-			);
-			name = "Web VCs";
 			sourceTree = "<group>";
 		};
 		9495723A1640F30500778400 /* Images */ = {
@@ -305,9 +336,9 @@
 				9434EEB4163EFFD10001D0E6 /* ListOfAZColleges.txt in Resources */,
 				94D72CC316404A5E001C8DB0 /* MyClasses.txt in Resources */,
 				362ADA4A164068EA00FE8463 /* ListOfMapLocations.plist in Resources */,
-				949572291640D62200778400 /* iPadStoryboard.storyboard in Resources */,
 				36D11E001652D6C200794B75 /* iPhoneStoryboard.storyboard in Resources */,
 				94D2D21A1654606A009FB2C0 /* MyClasses.xml in Resources */,
+				94CE79B3165B323800C21E74 /* iPadStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +354,6 @@
 				366975F2163F133E008368DB /* ListOfCollegesTableViewController.m in Sources */,
 				366975F4163F1351008368DB /* ASUViewController.m in Sources */,
 				366975F5163F1355008368DB /* UofAViewController.m in Sources */,
-				366975F6163F135A008368DB /* WebViewController.m in Sources */,
 				94D72CBD163F7ED7001C8DB0 /* InitialViewController.m in Sources */,
 				94D72CC1163F8097001C8DB0 /* MyClassesTableViewController.m in Sources */,
 				94D72CC616405A13001C8DB0 /* MapViewController.m in Sources */,
@@ -333,6 +363,10 @@
 				94D2D21216545BFA009FB2C0 /* DetailClassTableViewController.m in Sources */,
 				94D2D21516545D9C009FB2C0 /* XMLClass.m in Sources */,
 				94D2D21816545EA2009FB2C0 /* XMLParser.m in Sources */,
+				9452DDE41661D07000AA8845 /* HTMLClassesViewController.m in Sources */,
+				9479F95716628F5500778823 /* TFHpple.m in Sources */,
+				9479F95816628F5500778823 /* TFHppleElement.m in Sources */,
+				9479F95916628F5500778823 /* XPathQuery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +388,15 @@
 				36F15860163E42370093F89A /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		94CE79B1165B323800C21E74 /* iPadStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94CE79B2165B323800C21E74 /* en */,
+			);
+			name = iPadStoryboard.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -414,8 +457,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ArizonaCollegeSearch/ArizonaCollegeSearch-Prefix.pch";
+				"HEADER_SEARCH_PATHS[arch=*]" = "${SDKROOT}/usr/include/libxml2";
 				INFOPLIST_FILE = "ArizonaCollegeSearch/ArizonaCollegeSearch-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				"OTHER_LDFLAGS[arch=*]" = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -427,8 +472,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ArizonaCollegeSearch/ArizonaCollegeSearch-Prefix.pch";
+				"HEADER_SEARCH_PATHS[arch=*]" = "${SDKROOT}/usr/include/libxml2";
 				INFOPLIST_FILE = "ArizonaCollegeSearch/ArizonaCollegeSearch-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				"OTHER_LDFLAGS[arch=*]" = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;

@@ -11,12 +11,5 @@
 @implementation XMLClass
 
 @synthesize title;
-@synthesize number;
-@synthesize semester;
-@synthesize year;
-@synthesize professor;
-@synthesize startTime;
-@synthesize endTime;
-@synthesize classID;
 
 @end

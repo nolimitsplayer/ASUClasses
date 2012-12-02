@@ -10,10 +10,13 @@
 
 @implementation InitialViewController
 
+@synthesize classSearchButton = _classSearchButton;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+	self.classSearchButton = [[Button alloc] initWithFrame:CGRectMake(80, 60, 150, 100)];
 }
 
 - (IBAction)classSearchButtonClicked:(id)sender {

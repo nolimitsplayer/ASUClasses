@@ -1,13 +1,9 @@
 <?xml version="1.0"?>
 <classlist type="array">
 	<class>
-		<title>CSE</title>
-		<number>120</number>
-		<semester>Fall</semester>
-		<year>2012</year>
-		<professor>Goryll</professor>
-		<startTime>730 AM</startTime>
-		<endTime>845 AM</endTime>
-		<id>12345</id>
+		<title>CSE 120</title>
+	</class>
+	<class>
+		<title>FAS 332</title>
 	</class>
 </classlist>

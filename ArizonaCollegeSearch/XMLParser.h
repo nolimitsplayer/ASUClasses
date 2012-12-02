@@ -7,18 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "XMLClass.h"
+#import <UIKit/UIKit.h>
 
 @class XMLClass;
-@interface XMLParser : NSObject <NSXMLParserDelegate> {
-	NSMutableString *currentElement;
-	NSMutableArray *classesList;
-	XMLClass *currentClass;
+@interface XMLParser : NSObject {
+	NSMutableString *currentElementValue;
+	XMLClass *aClass;
+	NSMutableArray *array;
 }
 
-@property (nonatomic, retain) NSMutableArray *classesList;
-
-- (XMLParser *)initXMLParser;
 - (NSMutableArray *)getClassList;
 
 @end
+

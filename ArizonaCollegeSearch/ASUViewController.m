@@ -7,26 +7,23 @@
 //
 
 #import "ASUViewController.h"
-#import "WebViewController.h"
+#import "HTMLClassesViewController.h"
 
 @implementation ASUViewController
 @synthesize classAbbreviation = _classAbbreviation;
 @synthesize classNumber = _classNumber;
 @synthesize honorsSwitch = _honorsSwitch;
 @synthesize searchButton = _searchButton;
-@synthesize listOfClassAbbreviations = _listOfClassAbbreviations;
 @synthesize openSwitch = _openSwitch;
-@synthesize pickerView = _pickerView;
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	self.classAbbreviation.enabled = NO;
     UITapGestureRecognizer *pook = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self
                                    action:@selector(dismissKeyboard)];
     [self.view addGestureRecognizer:pook];
-	self.listOfClassAbbreviations = [[NSArray alloc] initWithObjects:@"CSE",@"MAT", @"3", @"3", @"3", @"3", @"3", @"3", @"3", @"3", nil];
-
+	//self.listOfClassAbbreviations = [[NSArray alloc] initWithObjects:@"CSE",@"MAT", @"3", @"3", @"3", @"3", @"3", @"3", @"3", @"3", nil];
+	 
 }
 
 - (IBAction)searchButtonClicked:(id)sender {
@@ -50,7 +47,7 @@
     }
 }
 
-- (IBAction)showPicker:(UITextField *)sender {
+/*- (IBAction)showPicker:(UITextField *)sender {
 	self.pickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 600, 320, 200)];
 	self.pickerView.delegate = self;
 	self.pickerView.showsSelectionIndicator = YES;
@@ -76,7 +73,7 @@
 
 - (CGFloat)pickerView:(UIPickerView *)pickerView widthForComponent:(NSInteger)component {
 	return 300;
-}
+}*/
 
 - (void)dismissKeyboard {
 	[self.classAbbreviation resignFirstResponder];
@@ -121,12 +118,22 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"WebSegue"]) {
-		WebViewController *wvc = (WebViewController *)[segue destinationViewController];
-		NSArray *array = [[NSArray alloc] initWithObjects:@"https://webapp4.asu.edu/catalog/classlist?s=", self.classAbbreviation.text, @"&n=", self.classNumber.text, @"&t=", [self classYear], @"&e=", [self stateOfOpenSwitch], @"&hon=", [self stateOfHonorsSwitch], nil];
-		wvc.url = [array componentsJoinedByString:@""];
+        if ([self.classNumber.text length] > 2) {
+            HTMLClassesViewController *wvc = (HTMLClassesViewController *)[segue destinationViewController];
+            NSArray *array = [[NSArray alloc] initWithObjects:@"https://webapp4.asu.edu/catalog/classlist?s=", [self.classAbbreviation.text uppercaseString], @"&n=", [self.classNumber.text substringWithRange:NSMakeRange(0,3)], @"&t=", [self classYear], @"&e=", [self stateOfOpenSwitch], @"&hon=", [self stateOfHonorsSwitch], nil];
+            wvc.url = [array componentsJoinedByString:@""];
+        }
 	}
 	//set Map Kit String here
 }
+
+
+/*- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+	[self classAbbreviationClicked:self.classAbbreviation];
+	return NO;
+}*/
+
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
     return YES;

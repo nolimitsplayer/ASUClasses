@@ -10,11 +10,17 @@
 
 @implementation Button
 
+@synthesize button = _button;
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+        [self.button.layer setCornerRadius:8.0f];
+		[self.button.layer setMasksToBounds:YES];
+		[self.button.layer setBorderWidth:1.0f];
+		[self.button.layer setBackgroundColor:[[UIColor redColor] CGColor]];
+		[self.button setBackgroundColor:[UIColor redColor]];
     }
     return self;
 }

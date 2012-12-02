@@ -20,10 +20,10 @@
 	
 	self.tableView.delegate = self;
 	self.tableView.dataSource = self;
-	NSString *xmlPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"MyClasses.xml"];
-	NSURL *xmlURL = [NSURL fileURLWithPath:xmlPath];
+	NSURL *xmlURL = [[NSBundle mainBundle] URLForResource:@"MyClasses" withExtension:@"xml"];
+	NSLog(@"%@", xmlURL);
 	NSXMLParser *parser1 = [[NSXMLParser alloc] initWithContentsOfURL:xmlURL];
-	XMLParser *xmlParser = [[XMLParser alloc] initXMLParser];
+	XMLParser *xmlParser = [[XMLParser alloc] init];
 	[parser1 setDelegate:xmlParser];
 	BOOL success = [parser1 parse];
 	if (!success) {

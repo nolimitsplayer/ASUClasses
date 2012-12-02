@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface Button : UIButton
+
+@property (nonatomic) UIButton *button;
 
 @end

@@ -10,22 +10,8 @@
 
 @interface XMLClass : NSObject {
 	NSString *title;
-	NSString *number;
-	NSString *semester;
-	NSString *year;
-	NSString *professor;
-	NSString *startTime;
-	NSString *endTime;
-	NSString *classID;
 }
 
 @property (nonatomic, retain) NSString *title;
-@property (nonatomic, retain) NSString *number;
-@property (nonatomic, retain) NSString *semester;
-@property (nonatomic, retain) NSString *year;
-@property (nonatomic, retain) NSString *professor;
-@property (nonatomic, retain) NSString *startTime;
-@property (nonatomic, retain) NSString *endTime;
-@property (nonatomic, retain) NSString *classID;
 
 @end
